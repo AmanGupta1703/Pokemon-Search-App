@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-search {
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper-search {
+    flex-direction: column;
+    align-items: start;
+    row-gap: 2rem;
+  }
+}

@@ -1,0 +1,15 @@
+.loader {
+  font-weight: bold;
+  font-size: 1.8rem;
+  animation: l1 1s linear infinite alternate;
+}
+
+.loader:before {
+  content: "Loading...";
+}
+
+@keyframes l1 {
+  to {
+    opacity: 0;
+  }
+}

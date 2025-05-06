@@ -1,0 +1,27 @@
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  transition: all 250ms ease-in-out;
+  outline: none;
+}
+
+.btn-search {
+  background-color: whitesmoke;
+  border-top-right-radius: var(--form-border-radius);
+  border-bottom-right-radius: var(--form-border-radius);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+  align-self: stretch;
+}
+
+.btn-search:hover {
+  transform: scale(0.96);
+}
+
+.btn-search:active {
+  transform: scale(0.8);
+}

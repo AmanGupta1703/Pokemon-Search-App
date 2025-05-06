@@ -1,0 +1,10 @@
+.form {
+}
+
+.form-search {
+  background-color: var(--color-primary-02);
+  border-radius: var(--form-border-radius);
+  display: flex;
+  align-items: center;
+  width: 32rem;
+}

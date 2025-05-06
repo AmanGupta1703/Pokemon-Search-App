@@ -1,0 +1,85 @@
+.pokemon-cards {
+  /* display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.pokemon-card {
+  background-color: var(--color-primary-01);
+  border: 0.1rem solid var(--color-primary-02);
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  text-align: center;
+  transition: all 2ms ease-in-out;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+
+  width: 100%;
+  max-width: 28rem;
+}
+
+.pokemon-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+.pokemon-name {
+  font-size: 1.5rem;
+  color: var(--color-primary-02);
+}
+
+.pokemon-id {
+  font-size: 1.2rem;
+  color: var(--color-primary-02);
+}
+
+.pokemon-types {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+.pokemon-type {
+  cursor: pointer;
+  display: inline-block;
+  background-color: var(--color-primary-02);
+  color: white;
+  border-radius: 0.4rem;
+  transition: all 500ms ease-in-out;
+  padding: 0.8rem 1rem;
+}
+
+/* STATES */
+.pokemon-card:hover {
+  background-color: var(--color-primary-02);
+  border-color: var(--color-primary-01);
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.04);
+}
+
+.pokemon-card:hover .pokemon-name,
+.pokemon-card:hover .pokemon-id {
+  color: var(--color-primary-01);
+}
+
+.pokemon-card:hover .pokemon-type {
+  color: var(--color-primary-02);
+  background-color: var(--color-primary-01);
+}
+
+/* MEDIA */
+@media screen and (max-width: 600px) {
+  .pokemon-cards {
+    /* grid-template-columns: repeat(1, 1fr); */
+    justify-content: center;
+  }
+}
